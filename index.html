@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+                div[data-linear-gradient="lg"]{ 
+                    width: 80%;
+                    height: 500px;
+                    background-color: #333;
+                    margin: 50px auto;
+                    border-style: solid;
+                    border-width: 10px;
+                    border-image:-webkit-linear-gradient(45deg,red,pink,orange ,blue,yellow)4;
+                    transition: all 1s linear;
+                    transform: scale(1,1);
+                    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.2);
+                }
+                div[data-linear-gradient="lg"]:hover{ 
+                    background-color: #ddd;
+                    transform: scale(1.1,1.1);
+
+                }
+                div[data-linear-gradient="lp"]{ 
+                    width: 60%;
+                    height: 300px;
+                    background-color:#fff;
+                    margin: 100px auto;
+                    border-style: solid;
+                    border-width: 10px;
+                    border-image:-webkit-linear-gradient(45deg,red,olive,maroon)4;
+                    transition: all 1s linear;
+                    transform: scale(1,1);
+                    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.2);
+                    font-size: 3em;
+                    text-align: center;
+                    line-height: 200px;
+                    color: red;
+                    font-weight: bold;
+                }
+                div[data-linear-gradient="lp"]:hover{ 
+                    
+                
+                    transform: translatey(50px);
+
+                }
+
+
+
+        </style>
+    </head>
+    <body>
+            <div data-linear-gradient="lg">
+                <div data-linear-gradient="lp">
+                   * LINEAR GRADEINT *
+                </div>
+            </div>
+    </body>
+    </html>
